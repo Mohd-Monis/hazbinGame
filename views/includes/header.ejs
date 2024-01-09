@@ -1,0 +1,41 @@
+<header>
+    <nav>
+        <div id="logo">
+            <a href="/">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
+        <ul>
+            <% if(isAuth) {%>
+                <li>
+                    <a href="/game">Play </a>
+                </li>
+            <% } %>
+            <% if(isAuth) {%>
+            <li>
+                <a href="#">Watch </a>
+            </li>
+            <% } %>
+            <% if(isAuth) {%>
+            <li>
+                <a href="#">Comment</a>
+            </li>
+            <% } %>
+            <% if(isAuth) {%>
+            <li>
+                <a href="#">Get Latest Updates</a>
+            </li>
+            <% } %>
+            <% if(!isAuth) {%>
+                <li>
+                    <a href="/login">Login to Play</a>
+                </li>
+            <% } %>
+            <% if(!isAuth) {%>
+                <li>
+                        <a href="/signup">Sign Up</a>
+                </li>
+            <% } %>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,15 @@
+body{
+    background-image: url("../images/Hell.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    background-color: rgba(0,0,0,0.7);
+}
+
+video{
+    display: block;
+    margin: 4rem auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px rgb(223, 104, 60);
+}
